@@ -1,0 +1,180 @@
+﻿/*首页导航*/
+.module-footer-body-left div img, .module-footer-body-right div img{
+    width: 100%;
+    height: 100%;
+}
+.module-footer-body-left div img{
+    width:180px;
+}
+.nav-box{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    min-width: 1000px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /*overflow: hidden;*/
+}
+.nav-box:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    opacity: .7;
+    filter:alpha(opacity=70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.nav-logo{
+    width: 150px;
+    height: 80px;
+}
+.nav-logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav-address{
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #fff;
+    padding-right: 20px;
+    background: url(../images/more.png) no-repeat right center;
+}
+.nav-login{
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+}
+.nav-login.v-btn{
+    background: url(../images/v.png) no-repeat right center;
+    padding-right: 25px;
+}
+.no-pass.doing{
+    background: #69acff;
+}
+.nav-content{margin-left: 100px;}
+.nav-content a{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 30px;
+}
+.nav-content a:last-child{background: url('');}
+.nav-content a.active{
+    color: #2bbbfd;
+}
+.relative-content{
+    position: relative;
+    width: 1000px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 0;
+    color: #fff;
+    margin: 0 auto;
+    z-index: 1;
+}
+.nav-login.active{
+    background: url(../images/more.png) no-repeat right center;
+    padding-right: 20px;
+}
+#authentication:hover~.drop-down-box{
+    display: block;
+}
+.drop-down-box:hover{display: block;}
+.drop-down-box{
+    width: 205px;
+    height: 212px;
+    background: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    border-radius: 2px;
+    box-shadow: 1px 5px 15px rgba(230,230,230,.7);
+    display: none;
+}
+.drop-down-box:after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 6px;
+    background: url(../images/tusan.png) no-repeat center center;
+    position: absolute;
+    top: -6px;
+    right: 30px;
+}
+.drop-down-box p{
+    height: 53px;
+    line-height: 53px;
+    padding-left: 30px;
+    font-size: 16px;
+    color: #414a60;
+    background: #fff;
+    cursor: pointer;
+}
+.drop-down-box p.on,.drop-down-box p:hover{
+    background: #efefef;
+}
+.down-load-layer{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+}
+.down-load-layer:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .7;
+}
+.down-load-relative{
+    width: 410px;
+    height: 470px;
+    background: #fff;
+    margin:0px auto;
+    padding: 20px 30px;
+    position: relative;
+    top: 160px;
+    top: calc(50% - 235px);
+    z-index: 1;
+}
+.down-load-relative .close{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.down-load-wain{
+    line-height: 26px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 42px;
+}
+.down-load-erwei{
+    text-align: center;
+}
+.down-load-erwei img{
+    width: 240px;
+    height: 240px;
+}

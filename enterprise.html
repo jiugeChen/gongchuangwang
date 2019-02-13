@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"><link rel="icon" href="/img/base/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>关于我们</title>
+	    <link rel="stylesheet" type="text/css" href="static/css/module.css"/>
+	    <link rel="stylesheet" type="text/css" href="static/css/page.css"/>
+	    <style type="text/css">
+	    	body{background: #f1f4f9!important;}
+	    	.section-list{margin-top: 0;padding:30px;background: #fff;margin-bottom: 50px;}
+	    	.f1{
+	    		width: 100%;
+	    		min-width: 1000px;
+	    		background: url(static/images/banner.jpg) no-repeat left center;
+				background-size:cover ;
+			}
+	    	.f3{
+	    		width: 100%;
+	    		min-width: 1000px;
+	    		background: url(static/images/every-bg.png) no-repeat center center;
+	    		height: 746px;
+	    	}
+	    	.f7{
+	    		width: 100%;
+				height: 320px;
+	    		min-width: 1000px;
+	    		background: url(static/images/banner2.jpg) no-repeat left center;
+				background-size:cover ;
+	    	}
+	    	.place-btn0{
+	    		width: 160px;
+	    		height: 50px;
+	    		line-height: 50px;
+	    		margin-right: 40px;
+	    		font-size: 18px;
+	    		box-shadow: 0 18px 20px rgba(29,42,35,.5);
+	    	}
+	    	.app-btn:hover~.app-erwei-box{opacity: 1;}
+	    	.app-erwei-box:hover{opacity: 1;}
+	    	.app-erwei-box{
+	    		width: 160px;
+	    		height:160px;
+	    		text-align: center;
+	    		padding: 27.5px;
+	    		background: #fff;
+	    		border-radius: 10px;
+	    		opacity: 0;
+	    		position: absolute;
+	    		top: 80px;
+	    		left: 0;
+	    		transition: all 2s;
+	    	}
+	    	.app-erwei-box img{
+	    		width: 105px;
+	    		height: 105px;
+	    	}
+	    	.app-erwei-box:after{
+	    		content: '';
+	    		display: block;
+	    		width: 160px;
+	    		height: 12px;
+	    		background: url(static/images/san.png) no-repeat center center;
+	    		position: absolute;
+	    		top: -12px;
+	    		left: 0;
+	    	}
+	    	.img_1{width: 146px;height: 146px;}
+			.img_2{width: 235px;height: 146px;}
+			.img_3{width: 261px;height: 259px;}
+			.img_4{width: 120px;height: 259px;}
+			.now-btn{
+				width: 170px;
+				display: block;
+				margin: 25px auto 0;
+			}
+	    </style>
+	</head>
+	<body>
+
+<link href="static/css/module.css" rel="stylesheet"/>
+	    <link href="static/css/headerpage.css" rel="stylesheet"/>
+		<script type="text/javascript" src="static/js/e230312507af4e4d8192bfb37776cfa8.js"></script>
+		<div class="nav-box">
+			<div class="relative-content">
+				<a href="#">
+					<div class="nav-logo fl">
+						<img src="static/picture/logo.svg"/>
+					</div>
+				</a>
+				<div class="fl nav-content">
+					<a href="index.html"  >首页</a>
+					<a id="jobListMenu" href="enterprise.html" >介绍</a>
+					<a href="enterprise.html" >关于共创网</a>
+					<a href="enterprise.html" >关于我们</a>
+				</div>
+
+			</div>
+		</div>
+
+		
+		<script src="static/js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var $body = $('body');
+				
+				$body.find('.drop-down-box').on('click','p',function(){
+					$body.find(this).addClass('on').siblings().removeClass('on');
+				});
+				
+				//down-load-layer隐藏显示函数
+				window.loadLayer = function(num){
+					num == 0 ? $body.find('.down-load-layer').hide() : $body.find('.down-load-layer').show();
+				}
+
+				var myCity = new BMap.LocalCity();
+				myCity.get(myFun);
+			});
+
+			function myFun(result){
+
+			}
+
+		</script>
+
+
+		<div class="f1 enterpriseMain">
+			<div class="module-content content1" style="padding-top:250px;">
+				<p class="enterprise-p1 wow fadeInUp animation-node-act">以人才为核心，以科技创新孵化器为流量</p>
+				<p class="enterprise-p2 fw wow fadeInUp animation-node-act">尽在共创网</p>
+				<div class="pr">
+					<!--<button class="place-btn0 homeBtn app-btn wow fadeInUp animation-node-act">APP下载</button>-->
+					<!--<button class="place-btn0 homeBtn wow fadeInUp animation-node-act issueJob">发布职位</button>-->
+					<div class="app-erwei-box">
+						<img class="codeImg" src="static/picture/index-erwei.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="enterprise-f2">
+			<ul class="enterprise-f2-box wow fadeInUp animation-node-act">
+				<li>
+					<div class="enterprise-f2-img">
+						<img src="static/picture/nav1.png" alt="" />
+						<img src="static/picture/nav10.png" alt="" />
+					</div>
+					<p class="fs-20 enterprise-f2-p1">智慧互联网+</p>
+					<p class="enterprise-f2-line"></p>
+					<p class="fs-16 enterprise-f2-p2">线上平台+线下实施</p>
+					<p class="fs-16 enterprise-f2-p2">精准人岗匹配</p>
+					<p class="fs-16 enterprise-f2-p2">降低找人成本</p>
+				</li>
+				<li>
+					<div class="enterprise-f2-img">
+						<img src="static/picture/nav20.png" alt="" />
+						<img src="static/picture/nav2.png" alt="" />
+					</div>
+					<p class="fs-20 enterprise-f2-p1">专业服务团队</p>
+					<p class="enterprise-f2-line"></p>
+					<p class="fs-16 enterprise-f2-p2">5-10年从业经验</p>
+					<p class="fs-16 enterprise-f2-p2">10分钟内快速响应</p>
+					<p class="fs-16 enterprise-f2-p2">十余项标准服务流程</p>
+				</li>
+				<li>
+					<div class="enterprise-f2-img">
+						<img src="static/picture/nav3.png" alt="" />
+						<img src="static/picture/nav30.png" alt="" />
+					</div>
+					<p class="fs-20 enterprise-f2-p1">现场实时管控</p>
+					<p class="enterprise-f2-line"></p>
+					<p class="fs-16 enterprise-f2-p2">APP配备现场人员管理工具</p>
+					<p class="fs-16 enterprise-f2-p2">可实现电子签到</p>
+					<p class="fs-16 enterprise-f2-p2">信息群发等实时操作</p>
+				</li>
+				<li>
+					<div class="enterprise-f2-img">
+						<img src="static/picture/nav1.png" alt="" />
+						<img src="static/picture/nav10.png" alt="" />
+					</div>
+					<p class="fs-20 enterprise-f2-p1">实践培训</p>
+					<p class="enterprise-f2-line"></p>
+					<p class="fs-16 enterprise-f2-p2">创办学院</p>
+					<p class="fs-16 enterprise-f2-p2">对优质兼职人员</p>
+					<p class="fs-16 enterprise-f2-p2">进行专业实践培训</p>
+				</li>
+			</ul>
+		</div>
+		<div class="f3" id="fff">
+			<div class="module-content" style="padding-top: 130px;">
+				<p class="fs-30 enterprise-f3-p1 wow fadeInUp animation-node-act">服务全国，</p>
+				<p class="fs-30 enterprise-f3-p1 wow fadeInUp animation-node-act">运营覆盖 <em class="fs-48b">58</em>个主要会展城市</p>
+				<p class="enterprise-f3-p2 mt-30 wow fadeInUp animation-node-act">试运营期间：服务量达到 <em class="fs-blue">8400+</em>人天次</p>
+				<p class="enterprise-f3-p2 wow fadeInUp animation-node-act">提供 <em class="fs-blue">400+</em>场大型展览与会议的人力资源服务</p>
+			</div>
+		</div>
+		<div class="f4">
+			<div class="module-content">
+				<h1 class="enterprise-f-name"><p class="fs-40 wow fadeInUp animation-node-act">精品服务</p></h1>
+				<div class="enterprise-f-name-d mt-30 mb-30 wow fadeInUp animation-node-act">
+					<p class="fs-16g">以人力资源为入口切入会展行业，</p>
+					<p class="fs-16g">打造具有高度专业化、标准化和互联网化等特色的精品服务</p>
+				</div>
+				<ul class="service-list clearFloat wow fadeInUp animation-node-act">
+					<li>
+						<p class="service-list-p1 mt-30">展会兼职</p>
+						<p class="service-list-p2">为大型会议、展览、活动</p>
+						<p class="service-list-p2">现场提供的人员服务方案</p>
+					</li>
+					<li>
+						<p class="service-list-p1 mt-30">会议管家</p>
+						<p class="service-list-p2">为会议公司设计的</p>
+						<p class="service-list-p2">小型会议人员服务方案</p>
+					</li>
+					<li>
+						<p class="service-list-p1 mt-30">礼仪模特</p>
+						<p class="service-list-p2">为会议、展览、活动现场</p>
+						<p class="service-list-p2">提供的礼仪模特服务方案</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="f5"  id="cgal">
+			<div class="module-content">
+				<h1 class="enterprise-f-name"><p class="fs-40 wow fadeInUp animation-node-act" >成功案例</p></h1>
+				<div class="clearFloat personnel-list">
+					<!--注意hover的提示字只能为四个字-->
+					<ul class="fl">
+						<li>
+							<img class="img_1" src="static/picture/img-1.jpg"/>
+							<p class="personnel-wain">展会兼职</p>
+						</li>
+						<li>
+							<img class="img_2" src="static/picture/img-2.jpg"/>
+							<p class="personnel-wain">模特</p>
+						</li>
+						<li>
+							<img class="img_3" src="static/picture/img-5.jpg"/>
+							<p class="personnel-wain">会议管家</p>
+						</li>
+						<li>
+							<img class="img_4" src="static/picture/img-6.jpg"/>
+							<p class="personnel-wain">展会礼仪</p>
+						</li>
+					</ul>
+					<ul class="fr">
+						<li>
+							<img class="img_3" src="static/picture/img-3.jpg"/>
+							<p class="personnel-wain">展会兼职</p>
+						</li>
+						<li>
+							<img class="img_4" src="static/picture/img-4.jpg"/>
+							<p class="personnel-wain">模特</p>
+						</li>
+						<li>
+							<img class="img_1" src="static/picture/img-7.jpg"/>
+							<p class="personnel-wain">翻译</p>
+						</li>
+						<li>
+							<img class="img_2" src="static/picture/img-8.jpg"/>
+							<p class="personnel-wain">安保</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="f6">
+			<div class="module-content">
+				<ul class="clearFloat service-box wow fadeInUp animation-node-act">
+					<li>
+						<img src="static/picture/nav-1.png"/>
+						<p class="fs-24 fw service-box-p1">合作咨询</p>
+						<p class="fs-14 service-box-p2">拨打客服电话</p>
+						<p class="fs-14 service-box-p2">XXXXXXXX</p>
+					</li>
+					<li>
+						<img src="static/picture/nav-2.png"/>
+						<p class="fs-24 fw service-box-p1">商务沟通</p>
+						<p class="fs-14 service-box-p2">项目经理恰谈合作</p>
+						<p class="fs-14 service-box-p2">签署合同</p>
+					</li>
+					<li>
+						<img src="static/picture/nav-3.png"/>
+						<p class="fs-24 fw service-box-p1">项目执行</p>
+						<p class="fs-14 service-box-p2">招募兼职人员面试</p>
+						<p class="fs-14 service-box-p2">现场管控，工资结算</p>
+					</li>
+					<li>
+						<img src="static/picture/nav-4.png"/>
+						<p class="fs-24 fw service-box-p1">项目结算</p>
+						<p class="fs-14 service-box-p2">项目总结</p>
+						<p class="fs-14 service-box-p2">提供相关的售后 </p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="f7">
+			<div class="module-content" style="padding-top: 84px;">
+				<p class="look-name wow fadeInUp animation-node-act">共创网，实现人才共享</p>
+				<p class="look-phone wow fadeInUp animation-node-act">合作热线：XXXXXXXXX</p>
+				<button class="place-btn0 now-btn wow  animation-node-act ">立即加入我们</button>
+			</div>
+		</div>
+		
+
+
+	    <link href="static/css/module.css" rel=" "/>
+	    <style type="text/css">
+	    	.module-footer-head{
+	    		width: 100%;
+	    		min-width: 100px;
+	    		height: 50px;
+	    		line-height: 50px;
+	    		font-size: 12px;
+	    		color: #9fa3af;
+	    		background: #505050;
+	    	}
+	    	.module-footer-head a{
+	    		display: inline-block;
+	    		height: 50px;
+	    		line-height: 50px;
+	    		font-size: 12px;
+	    		color: #9fa3af;
+	    		margin-left: 15px;
+	    	}
+	    	.module-footer-foot{
+	    		width: 100%;
+	    		min-width: 1000px;
+	    		background: #505050;
+	    		font-size: 10px;
+	    		color: #fff;
+	    		height: 50px;
+	    		line-height: 50px;
+	    		text-align: center;
+	    	}
+	    	.module-footer-body{
+	    		background: #606060;
+	    		width: 100%;
+	    		min-width: 1000px;
+	    		height: 231px;
+	    		font-size: 12px;
+	    		color: #fff;
+	    	}
+	    	.module-footer-body-left{
+	    		width: 292px;
+	    	}
+	    	.module-footer-body-left div,.module-footer-body-right div{
+	    		width: 91px;
+	    		text-align: center;
+	    		margin-top: 56px;
+	    	}
+	    	.module-footer-body-left div p,.module-footer-body-right div p{
+	    		height: 44px;
+	    		line-height: 44px;
+	    	}
+	    	.module-footer-body-center{
+	    		width: 414px;
+	    		text-align: center;
+	    		padding-top: 35px;
+	    	}
+	    	.module-footer-body-center p{
+	    		height: 42px;
+	    		line-height: 42px;
+	    		
+	    	}
+	    	.module-footer-body-right{
+	    		width: 294px;
+	    	}
+	    </style>
+		<div class="module-footer">
+			<div class="module-footer-head">
+
+			</div>
+			<div class="module-footer-body">
+				<div class="module-content">
+					<div class="fl module-footer-body-left">
+						<div class="fr">
+							<img src="static/picture/logo.svg"/>
+						</div>
+					</div>
+					<div class="fl module-footer-body-center">
+						<p>合作邮箱</p>
+						<p>CCCC@XXXXXXXX.com</p>
+						<p>客服热线</p>
+						<p>XXXXXX</p>
+					</div>
+					<div class="fr module-footer-body-right">
+						<div class="fl">
+							<img src="static/picture/erwei.png"/>
+							<p>扫码关注公众号</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="module-footer-foot">
+				Copyright©2015-2018 XXXXX科技有限公司 XX市XXX区XXXX街XXX号
+			</div>
+		</div>
+
+		
+		<script src="static/js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var $body = $('body');
+				
+				$body.find('#footer').load('footer.jsp');
+				$body.find('#header').load('headerPage.html');
+				$(".issueJob").click(function () {
+					location.href="/toIssueJob.shtml"
+				});
+				autoHeightWidth();
+			});
+			function autoHeightWidth() {
+				var windowHeight = $(window).height();
+				var windowWidth = $(window).width();
+				$('.enterpriseMain').css('height', windowHeight);
+				$('.enterpriseMain').css('width', windowWidth);
+                if(windowWidth > 1100){
+                    var width = 1360;
+                    $(".enterprise-p2").css("font-size",windowWidth * (58/width));
+                    $(".enterprise-p2").css("height",windowWidth * (58/width)+"px");
+                    $(".enterprise-p2").css("line-height",windowWidth * (58/width)+"px");
+
+                    $(".enterprise-p1").css("font-size",windowWidth * (24/width));
+                    $(".enterprise-p1").css("height",windowWidth * (24/width)+"px");
+                    $(".enterprise-p1").css("line-height",windowWidth * (24/width)+"px");
+                    $(".content1").css("padding-top",windowWidth * (250/width)+"px");
+
+                    $(".homeBtn").css("font-size",windowWidth * (18/width));
+                    $(".homeBtn").css("height",windowWidth * (50/width)+"px");
+                    $(".homeBtn").css("line-height",windowWidth * (50/width)+"px");
+                    $(".homeBtn").css("width",windowWidth * (160/width));
+                    $(".homeBtn").css("margin-right",windowWidth * (40/width)+"px");
+
+                    $(".app-erwei-box").css("height",windowWidth * (160/width)+"px");
+                    $(".app-erwei-box").css("width",windowWidth * (160/width)+"px");
+                    $(".app-erwei-box").css("top",windowWidth * (80/width)+"px");
+
+                    $(".codeImg").css("height",windowWidth * (105/width)+"px");
+                    $(".codeImg").css("width",windowWidth * (105/width)+"px");
+
+                }
+
+			}
+			$(window).resize(function() {
+				autoHeightWidth();
+			});
+			if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+				new WOW().init();
+			};
+		</script>
+	</body>
+</html>

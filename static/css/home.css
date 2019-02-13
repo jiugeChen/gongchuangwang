@@ -1,0 +1,170 @@
+﻿/*首页代码样式*/
+
+/*banner*/
+.banner{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	background: url(../images/1banner.jpg) no-repeat left center;
+	background-size:cover ;
+
+
+}
+.banner-box{
+	width: 1000px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 20px;
+	text-align: right;
+}
+.banner-detail{
+	margin-top: 200px;
+	-webkit-animation: fadeInUp 1.2s ease-in-out 0.3s backwards;
+    animation: fadeInUp 1.2s ease-in-out 0.3s backwards;
+}
+.banner-name{
+	font-size: 48px;
+	margin-top: 45px;
+	-webkit-animation: fadeInUp 1.2s ease-in-out 0.3s backwards;
+    animation: fadeInUp 1.2s ease-in-out 0.3s backwards;
+}
+.banner-erwei{
+	margin-top: 60px;
+	float: right;
+	width: 173px;
+	height: 198px;
+	text-align: center;
+	background: #fff;
+	-moz-box-shadow:0px 0px 25px rgba(0,0,0,.5);          /*firefox*/
+    -webkit-box-shadow:0px 0px 25px rgba(0,0,0,.5);      /*webkit*/
+    box-shadow:0px 0px 25px rgba(0,0,0,.5);                    /*opera或ie9*/
+}
+.banner-erwei-name{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 12px;
+	background: #00b0ff;
+}
+.banner-erwei img{
+	width: 103px;
+	height: 103px;
+	margin-top: 27px;
+}
+.section-content{
+	margin-top: 690px;
+	background: #f1f5f6;
+}
+.f1-box{padding-top: 100px;}
+.f1-left{
+	font-size: 16px;
+}
+.f1-left p:first-child{margin-top: 90px;}
+.f1-left p:first-child a{
+	font-size: 40px;
+	line-height: 100px;
+}
+.f1-left p a{color: #616879;font-size: 16px;line-height: 50px;}
+.f2{
+	background: url(../images/f2-bg.png) no-repeat center center;
+	height: 637px;
+}
+.f2-name{
+	text-align: center;
+	padding-top: 134px;
+	font-family: "黑体";
+}
+.f2-box{text-align: center;font-size: 0;padding-top: 170px;}
+.f2-box div{
+	display: inline-block;
+	width: 200px;
+}
+.f3{
+	background: url(../images/f3-bg.png) no-repeat center center;
+	height: 725px;
+}
+.f3-box{
+	text-align: center;
+	padding-top: 70px;
+}
+.f3-left,.f3-right{
+	position: absolute;
+	height: 42px;
+	line-height: 42px;
+	font-size: 18px;
+	color: #fff;
+	width: 130px;
+	text-align: center;
+	background: url(../images/left.png) no-repeat center center;
+	box-shadow: 0 0 20px rgba(179,227,248,.9);
+}
+.f3-right{
+	background: url(../images/right.png) no-repeat center center;
+}
+.f3-left{
+	left: 185px;
+	top: 170px;
+}
+.f3-right{
+	right: 185px;
+	top: 170px;
+}
+.all-job{
+	width: 180px!important;
+	display: block;
+	margin: 0 auto;
+	margin-top: 75px;
+	box-shadow: 5px 10px 15px rgba(179,227,248,.9);
+
+}
+.f4-box{width: 786px;margin: 0 auto;font-size: 0;padding-top: 70px;padding-bottom: 110px;}
+.f4-left,.f4-right{
+	display: inline-block;
+	width: 390px;
+}
+.f4-box img{
+	transition:transform .3s ease ;
+}
+.f4-box img:hover {
+    transform: scale(1.1);
+}
+.f4-box .f4-left div,.f4-box .f4-right div{
+	float:left;
+	overflow: hidden;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+.img_1{width: 146px;height: 146px;}
+.img_2{width: 235px;height: 146px;}
+.img_3{width: 261px;height: 259px;}
+.img_4{width: 120px;height: 259px;}
+.f5{
+	background: url(../images/f5-bg.jpg) no-repeat left center;
+	background-size:cover ;
+;
+	height: 712px;
+}
+.f5-name{
+	color: #fff;
+	font-size: 40px;
+	height: 316px;
+	line-height: 316px;
+	text-align: center;
+}
+.f5-box{
+	padding: 0 25px;
+	font-size: 0;
+}
+.f5-box div{
+	display: inline-block;
+	width: 190px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.f5-box div img{
+	width: 160px;
+	height: 60px;
+}
